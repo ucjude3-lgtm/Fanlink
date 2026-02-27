@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FanLink</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">FanLink</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#membership">Membership Card</a>
+      <a href="#meet">Meet & Greet</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="btn" id="loginBtn">Login / Register</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to FanLink</h1>
+    <p>Connect with your favorite celebrities and get exclusive fan membership cards!</p>
+    <a href="#membership" class="btn">Get Started</a>
+  </section>
+
+  <!-- Membership Card Section -->
+  <section id="membership" class="form-section">
+    <h2>Order Your Fan Membership Card</h2>
+    <form id="membershipForm">
+      <input type="text" placeholder="Full Name" id="memberName" required>
+      <input type="email" placeholder="Email" id="memberEmail" required>
+      <select id="membershipType">
+        <option>Basic Membership</option>
+        <option>VIP Membership</option>
+      </select>
+      <textarea placeholder="Special Notes (optional)" id="memberNotes"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Meet & Greet Section -->
+  <section id="meet" class="form-section">
+    <h2>Book a Meet & Greet</h2>
+    <form id="meetForm">
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1E90FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header nav a {
+  color: #FFFFFF;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+header nav a.btn {
+  background-color: #FFFFFF;
+  color: #1E90FF;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #1E90FF;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  color: #1E90FF;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form-section {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1E90FF;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: #1E90FF;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #187bcd;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1E90FF;
+  margin-top: 2rem;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FanLink</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">FanLink</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#membership">Membership Card</a>
+      <a href="#meet">Meet & Greet</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="btn">Login / Register</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to FanLink</h1>
+    <p>Connect with your favorite celebrities and get exclusive fan membership cards!</p>
+    <a href="#membership" class="btn">Get Started</a>
+  </section>
+
+  <!-- Membership Card Section -->
+  <section id="membership" class="form-section">
+    <h2>Order Your Fan Membership Card</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <select>
+        <option>Basic Membership</option>
+        <option>VIP Membership</option>
+      </select>
+      <textarea placeholder="Special Notes (optional)"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Meet & Greet Section -->
+  <section id="meet" class="form-section">
+    <h2>Book a Meet & Greet</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Celebrity Name (e.g., Keanu Reeves)" required>
+      <input type="date" required>
+      <textarea placeholder="Special Requests"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Login / Register Section -->
+  <section id="login" class="form-section">
+    <h2>Create an Account / Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Register / Login</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="form-section">
+    <h2>Contact Us</h2>
+    <p>Email us at: <a href="mailto:joescott0132@gmail.com">joescott0132@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 FanLink. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
